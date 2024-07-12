@@ -9,7 +9,7 @@
 	},
 	{
 		"id": 1,
-		"text": "And yet... something was missing",
+		"text": "And yet... something was missing.",
 		"right_button": {
 			"text": "[center]Next[/center]",
 			"navigation": 2
@@ -35,7 +35,7 @@
 		"id": 4, 
 		"text": "The question, which followed Adam in years to come.  Yet there was no answer.",
 		"right_button": {
-			"text": "[center]Next[/cemter]",
+			"text": "[center]Next[/center]",
 			"navigation": 5
 		}
 	},
@@ -59,7 +59,7 @@
 		"id": 8,
 		"text": "Adam lost his dream. What about you? Will you try again?",
 		"right_button": {
-			"text": "[center]Try Again.[/center]",
+			"text": "[center]Try Again[/center]",
 			"navigation": -1
 		}
 	},
