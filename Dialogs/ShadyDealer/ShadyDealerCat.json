@@ -1,0 +1,38 @@
+[
+	{
+		"id": 0,
+		"text": "Shadyback Dealer: Pss, hey kid! Wanna buy supreme quality backpack?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		"id": 1,
+		"text": "Shadyback Dealer: I've got one just in your size. Solid. Only for $50 000. Deal? Deal? Deal?",
+		"right_button": {
+			"text": "[center]Too expensive[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "Shadyback Dealer: What do you mean you have no money? Hey! that is nice cat... come you little bar of fur.",
+		"right_button": {
+			"text":"[center]Next[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 3,
+		"text": "The dealer is distracted by the cat. Now is your chance to steal the backpack",
+		"right_button": {
+			"text":"[center]Leave[/center]",
+			"navigation": -1
+		},
+		"middle_button": {
+			"text": "[center]Steal backpack[/center]",
+			"navigation": -2
+		}
+	}
+]

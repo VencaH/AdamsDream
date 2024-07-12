@@ -1,0 +1,42 @@
+[
+	{
+		"id": 0,
+		"text": "Amelia: Bessie? Bessie?... Where are you stu...",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		 "id": 1,
+		"text": "Amelia: Oh, Adam... I didn't see you there.",
+		"right_button": {
+			"text":"[center]Next[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "Amelia: Didn't you see one of my cows? Baroness Besselie Von Hildenbrug Von Achten got lost.",
+		"right_button": {
+			"text":"[center]Next[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 3,
+		"text": "Amelia: You didn't? Oh dear,what should i do. Cows are very expen... I mean vulnerable and dependable.",
+		"right_button": {
+			"text":"[center]Next[/center]",
+			"navigation": 4
+		}		
+	},
+	{
+		"id": 4,
+		"text": "Amelia: Oh I know! You can help me find her! I will give you... this totally magical backpack! So what do you say? Do you accept.",
+		"right_button": {
+			"text":"[center]Accept[/center]",
+			"navigation": -1
+		}		
+	},
+]

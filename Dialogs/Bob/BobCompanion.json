@@ -1,0 +1,46 @@
+[
+	{
+		"id":0,
+		"text": "Bob: Hey Adam! How is your quest to be an adventurer going?", 
+		"right_button": {
+			"text": "[center]Next[/center]", 
+			"navigation": 1
+		}
+	},
+	{
+		"id": 1,
+		"text": "Bob: So you are almost done!", 
+		"right_button": {
+			"text": "[center]Leave[/center]", 
+			"navigation": 2
+		},
+		"middle_button": {
+			"text": "[center]Ask Bob to join you.[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 2,
+		"text": "Bob: Well I wish you good luck!", 
+		"right_button": {
+			"text": "[center]Close[/center]", 
+			"navigation": -1
+		}
+	},
+	{
+		"id": 3,
+		"text": "Bob: Me? Join you? On an adventure full of danger, dragons, mosters, and treasures, and money... and treasures... and treasures...", 
+		"right_button": {
+			"text": "[center]Next[/center]", 
+			"navigation": 4
+		}
+	},
+	{
+		"id": 4,
+		"text": "Bob: Hmm, treasure could pay my colledge dept. Very well then. I am in!", 
+		"right_button": {
+			"text": "[center]Close[/center]", 
+			"navigation": -2
+		}
+	}
+]

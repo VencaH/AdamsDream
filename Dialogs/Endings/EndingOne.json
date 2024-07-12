@@ -1,0 +1,66 @@
+[
+	{
+		"id": 0,
+		"text": "So you did it. Tought Adam. He really did it. He get all what he needed to be adventurer.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		"id": 1,
+		"text": "And yet... something was missing",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "He had it all! The weapon, the backpack, the companion. Then what now?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 3,
+		"text": "What was the missing piece? Where is the adventure?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 4
+		}
+	},
+	{
+		"id": 4, 
+		"text": "The question, which followed Adam in years to come.  Yet there was no answer.",
+		"right_button": {
+			"text": "[center]Next[/cemter]",
+			"navigation": 5
+		}
+	},
+	{
+		"id": 5,
+		"text": "Until one day, Adam decided to ask the diffrent question. Does the need adventurers?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 6
+		}
+	},
+	{
+		"id": 6,
+		"text": "Everybody dreams... or at least used to at some point of their life. Until the dreams became nothing more but memories of childish naiveté.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 7
+		}
+	},
+		{
+		"id": 8,
+		"text": "Adam lost his dream. What about you? Will you try again?",
+		"right_button": {
+			"text": "[center]Try Again.[/center]",
+			"navigation": -1
+		}
+	},
+]

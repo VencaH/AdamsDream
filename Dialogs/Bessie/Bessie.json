@@ -1,0 +1,26 @@
+[
+	{
+		"id": 0,
+		"text": "Bessie: Meow.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		"id": 1,
+		"text": "This is Bessie, cat of Ms. Amelia. It seems that she is lost here. We should help her home",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "Adam is silent as usual. But if he would talk, he would say something like: 'Come with me if you want to leave!'",
+		"right_button": {
+			"text": "[center]Close[/center]",
+			"navigation": -1
+ 		}
+	}
+]

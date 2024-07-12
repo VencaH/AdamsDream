@@ -1,0 +1,50 @@
+[
+	{
+		"id": 0,
+		"text": "Adam snatched the backpack and started running. Followe by Bessie and quite angried shop owner.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		"id": 1,
+		"text": "What followed then was the greatest prusue the village experienced ever!",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "Mysterios backpack thief Adam runing upfrom, jumping fences, skipping stone and flying around others. Followed by Lady Fluffbal Bessie, effortlessly keep up the pace.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 3,
+		"text": "And behind them, trying to catch a breath the BBEG the dealer.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 4
+		}
+	},
+	{
+		"id": 4,
+		"text": "Of course, as is expected from a proper adventurer, in the end Adam returned the backpack to the dealer.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 5
+		}
+	},
+	{
+		"id": 5,
+		"text": "And so conclude first of many Adam's adventures.",
+		"right_button": {
+			"text": "[center]Try next[/center]",
+			"navigation": -1
+		}
+	}
+]

@@ -1,0 +1,10 @@
+[
+	{
+		"id": 0,
+		"text": "Sorry kid, I have nothing more to give you. You will have to look for other items elsewhere",
+		"right_button": {
+			"text" : "[center]Close[/center]",
+			"navigation": -1
+		}
+	}
+]

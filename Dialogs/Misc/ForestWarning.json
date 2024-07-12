@@ -1,0 +1,18 @@
+[
+	{
+		"id" : 0,
+		"text" : "Here the path leads to the deep dark forest. Not suitable for 8 year old kid.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		"id" : 1,
+		"text" : "One can only speculate what nightmares lie beyond this thick wall of dark green.",
+		"right_button": {
+			"text": "[center]Leave[/center]",
+			"navigation": -1
+		}
+	},
+]

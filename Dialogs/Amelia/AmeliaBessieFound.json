@@ -1,0 +1,18 @@
+[
+	{
+		"id":0,
+		"text": "Thank you! That is my Bessie. I will lock her inside, so she won't get lost again.",
+		"right_button": {
+				"text": "[center]Next[/center]",
+				"navigation": 1
+			}
+	},
+	{
+		"id": 1,
+		"text": "Oh right! Your reward! Here, take the backpack.",
+		"right_button":{
+			"text": "[center]Next[/center]",
+			"navigation": -1
+		}
+	}
+]

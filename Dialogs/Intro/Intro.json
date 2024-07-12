@@ -1,0 +1,74 @@
+[
+	{
+		"id": 0,
+		"text": "Everybody dreams. At least at some point in their live.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+		{
+		"id": 1,
+		"text": "Everbody wants to achive something big. Something nobody did before.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "But do we even remember when we stopped?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 3,
+		"text": "This is Adam. A small boy with big dream.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 4
+		}
+	},
+	{
+		"id": 4,
+		"text": "Adam wants to be an adventurer. But where to start?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 5
+		}
+	},
+	{
+		"id": 5,
+		"text": "How one become adventurer? What does adventure really need?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 6
+		}
+	},
+	{
+		"id": 6,
+		"text": "Adam thinks, that this question is simple. Adventurer needs 3 things: a weapon, a backpack and a companion.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 7
+		}
+	},
+	{
+		"id": 7,
+		"text": "So that is were Adam;s story starts. But how will it end? Will the Adam achive his dream? Or stop dreaming, like the rest of us?",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 8
+		}
+	},
+	{
+		"id": 9,
+		"text": "That is up to you. So go on. Dream, if you dare!",
+		"right_button": {
+			"text": "[center]Start Game[/center]",
+			"navigation": -1
+		}
+	},
+]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4d65avkjb2ha"]
+
+[ext_resource type="Texture2D" uid="uid://cy8c7sh6n0017" path="res://Assets/Tiles/Forest Tile.png" id="1_kw7xv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aw54t"]
+size = Vector2(20, 7)
+
+[node name="Tree" type="StaticBody2D"]
+y_sort_enabled = true
+
+[node name="TreeSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_kw7xv")
+region_enabled = true
+region_rect = Rect2(143.964, -0.188196, 31.8908, 47.7011)
+
+[node name="TreeCollision" type="CollisionShape2D" parent="."]
+position = Vector2(1, 16.5)
+shape = SubResource("RectangleShape2D_aw54t")

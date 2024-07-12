@@ -1,0 +1,50 @@
+[
+	{
+		"id": 0,
+		"text": "It turns out, that stealing does not pay of.Or at least, not if you are 8 and trying to steal from an adult.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 1
+		}
+	},
+	{
+		"id": 1,
+		"text": "And to to this - cats are very unrealiable companions when it comes to troubles.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 2
+		}
+	},
+	{
+		"id": 2,
+		"text": "Adam's dream was crushed very fast and quite violenty by very stern lecturing.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 3
+		}
+	},
+	{
+		"id": 3,
+		"text": "That is how Adam's dream ends.",
+		"right_button": {
+			"text": "[center]Next[/center]",
+			"navigation": 4
+		}
+	},
+	{
+		"id": 4, 
+		"text": "Or is there a more to all this?",
+		"right_button": {
+			"text": "[center]Next[/cemter]",
+			"navigation": 5
+		}
+	},
+	{
+		"id": 5,
+		"text": "Dare you try to find out?",
+		"right_button": {
+			"text": "[center]Try again[/center]",
+			"navigation": -1
+		}
+	}
+]

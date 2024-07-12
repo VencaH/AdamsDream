@@ -1,0 +1,117 @@
+[
+	{	"id":0,
+		"text":"Soldier: Hey kid! Whatcha doing here?", 
+		"right_button":{
+			"text":"[center]Next[/center]", 
+			"navigation":1
+		}
+	},
+	{	"id":1,
+		"text":"Soldier: Weapon for adventurer eh? Well i might have or two. ", 
+		"right_button":{
+			"text":"[center]Next[/center]", 
+			"navigation":2
+		}
+	},
+	{	"id":2,
+		"text":"Soldier: But before i can give it to you, I need conduct throughfull and sophisticated psyko... syco... psylo...", 
+		"right_button":{
+			"text":"[center]Next[/center]", 
+			"navigation":3
+		}
+	},
+	{	"id":3,
+		"text":"Soldier: I will ask you 3 questions. If you answer all of them correcty, you can have my wooden sword. Ready?", 
+		"right_button":{
+			"text":"[center]Ready[/center]", 
+			"navigation":4
+		}
+	},
+	{	"id":4,
+		"text":"Soldier: Wery well then, question number one: What is the capital city of England?", 
+		"left_button":{
+			"text":"[center]Prague[/center]",
+			"navigation":5
+		},
+		"middle_button":{
+			"text":"[center]Madrid[/center]",
+			"navigation":5
+		},
+		"right_button":{
+			"text":"[center]London[/center]", 
+			"navigation":6
+		}
+	},
+	{	"id":5,
+		"text":"Soldier: Sorry kid, but that is wrong... maybe next time?",
+		"right_button":{
+			"text":"[center]close[/center]",
+			"navigation":-3
+		}
+	},
+	{	"id":6,
+		"text":"Slodier: Correct! What is the atomic number of Xenon?", 
+		"left_button":{
+			"text":"[center]54[/center]", 
+			"navigation":7
+		},
+		"middle_button":{
+			"text":"[center]16[/center]",
+			"navigation":5
+		},
+		"right_button":{
+			"text":"[center]47[/center]",
+			"navigation":5
+		}
+	},
+	{	"id":7,
+		"text":"Slodier: Well... honestly, I don't know. So let's say correct and move to next one.", 
+		"right_button":{
+			"text":"[center]Next[/center]", 
+			"navigation":8
+		}
+	},
+	{ 	"id":8,
+		"text":"Slodier: What is the airspeed velocity of unloaden swallow?", 
+		"left_button":{
+			"text":"[center]156.2kph[/center]",
+			"navigation":5
+		},
+		"middle_button":{
+			"text":"[center]African or American?[/center]", 
+			"navigation":9
+		},
+		"right_button":{
+			"text":"[center]32.4kph[/center]",
+			"navigation":11
+		}
+	},
+	{	"id":9,
+		"text":"Slodier: Wait! Hold on... do you want to kill me?", 
+		"right_button":{
+			"text":"[center]Next[/center]", 
+			"navigation":10
+		}
+	},
+	{	"id":10,
+		"text":"Soldier: Agh, just take this junk and away, before i change my mind!.", 
+		"right_button":{
+			"text":"[center]Take rusty dagger[/center]", 
+			"navigation":-1
+		}
+	},
+	{	"id":11,
+		"text":"Soldier: ...",
+		"right_button":{
+			"text":"[center]Next[/center]",
+			"navigation":12
+		}
+	},
+	{	"id":12,
+		"text":"Solder: ... Correct? Well, i guess you win. Here is your price: The mighty Wooden sword!",
+		"right_button":{
+			"text":"[center]Take sword[/center]",
+			"navigation":-2
+		}
+	}
+]
