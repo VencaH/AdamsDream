@@ -11,7 +11,7 @@ const SPEED = 20.0
 
 var direction:Vector2
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity.x = direction.x * SPEED
 	velocity.y = direction.y * SPEED
 	pick_new_walk_state()
@@ -41,7 +41,7 @@ func pick_new_walk_state():
 	else:
 		state_machine.travel("idle")
 
-func _on_cat_barrier_body_entered(body):
+func _on_cat_barrier_body_entered(_body):
 	direction= Vector2(0,0)
 	switch_state()
 	update_animation()

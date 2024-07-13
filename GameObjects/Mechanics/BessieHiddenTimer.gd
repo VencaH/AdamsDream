@@ -8,3 +8,8 @@ func _on_timeout():
 	var dialog = get_node("../Dialog")
 	dialog.set_dialog_data("res://Dialogs/Misc/BessieJoinsGroup.json")
 	dialog.initialize_dialog()
+
+
+func _on_bessie_child_exiting_tree(_node):
+	stop()
+	print("Bessie gone")

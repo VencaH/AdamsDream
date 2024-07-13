@@ -11,4 +11,4 @@ func add_backpack():
 	backpack.visible = true
 
 func add_companion():
-	backpack.visible = true
+	companion.visible = true

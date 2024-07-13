@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=3 uid="uid://bpj1ak3swocht"]
+[gd_scene load_steps=110 format=3 uid="uid://bpj1ak3swocht"]
 
 [ext_resource type="Script" path="res://GameObjects/Game.gd" id="1_h0nli"]
 [ext_resource type="PackedScene" uid="uid://chhp6gvw63k2l" path="res://GameObjects/MapObjects/house.tscn" id="2_egbdm"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://d2kx0hb44amdm" path="res://Assets/Characters/Cat2.png" id="20_ww8vy"]
 [ext_resource type="Script" path="res://GameObjects/Npcs/ShadyBackpackDealer.gd" id="21_d2bud"]
 [ext_resource type="Texture2D" uid="uid://5ut4p6tpuwmq" path="res://Assets/Characters/ShadyDealer.png" id="22_hlven"]
+[ext_resource type="Script" path="res://GameObjects/Mechanics/BessieHiddenTimer.gd" id="22_tlla6"]
 [ext_resource type="PackedScene" uid="uid://d4d65avkjb2ha" path="res://GameObjects/MapObjects/tree.tscn" id="23_uvneo"]
 [ext_resource type="Script" path="res://GameObjects/Mechanics/Endings.gd" id="24_r66sj"]
 [ext_resource type="PackedScene" uid="uid://bq8exhjr3xj3n" path="res://GameObjects/Controls/QuestLog.tscn" id="25_cygkb"]
@@ -3123,17 +3124,23 @@ layer_2/tile_data = PackedInt32Array(-1834991, 393218, 20, -2621423, 393218, 18,
 metadata/_edit_lock_ = true
 
 [node name="HillsLow" type="StaticBody2D" parent="TileMap"]
+collision_layer = 5
+collision_mask = 5
 
 [node name="Cliff" type="CollisionPolygon2D" parent="TileMap/HillsLow"]
 polygon = PackedVector2Array(1040, -374, 620, -376, 619, -335, 614, -329, 218, -330, 211, -343, 211, -648, 730, -646, 729, -549, 873, -547, 879, -501, 1085, -499, 1085, -386, 1082, -380, 1077, -377, 1071, -374, 1070, -367, 1077, -367, 1085, -371, 1090, -376, 1089, -503, 1088, -689, 208, -674, 208, -334, 210, -326, 213, -321, 610, -319, 620, -324, 624, -329, 624, -370, 1040, -368)
 
 [node name="HillsHigh" type="StaticBody2D" parent="TileMap"]
+collision_layer = 5
+collision_mask = 5
 
 [node name="CliffHigh" type="CollisionPolygon2D" parent="TileMap/HillsHigh"]
 polygon = PackedVector2Array(608, -440, 280, -440, 280, -440, 275, -449, 276, -629, 278, -633, 282, -636, 678, -637, 682, -634, 684, -629, 685, -449, 682, -445, 676, -440, 639, -439, 639, -432, 677, -432, 685, -436, 689, -442, 689, -629, 686, -635, 678, -640, 282, -640, 276, -636, 272, -633, 273, -443, 273, -438, 276, -435, 280, -433, 608, -432)
 
 [node name="Forest" type="StaticBody2D" parent="TileMap" node_paths=PackedStringArray("dialog")]
 visible = false
+collision_layer = 5
+collision_mask = 5
 script = ExtResource("8_evn16")
 dialog_file = "res://Dialogs/Misc/ForestWarning.json"
 dialog = NodePath("../../Dialog")
@@ -3148,6 +3155,8 @@ position = Vector2(1215, -490)
 shape = SubResource("RectangleShape2D_daj34")
 
 [node name="Borders" type="StaticBody2D" parent="TileMap"]
+collision_layer = 5
+collision_mask = 5
 
 [node name="BordersRight" type="CollisionShape2D" parent="TileMap/Borders"]
 position = Vector2(1395, 396.5)
@@ -3158,6 +3167,8 @@ position = Vector2(-289.875, 435.375)
 shape = SubResource("RectangleShape2D_glnr5")
 
 [node name="River" type="StaticBody2D" parent="TileMap" node_paths=PackedStringArray("dialog")]
+collision_layer = 5
+collision_mask = 5
 script = ExtResource("9_e4xbw")
 dialog_file = "res://Dialogs/Misc/RiverWarning.json"
 dialog = NodePath("../../Dialog")
@@ -3177,15 +3188,23 @@ position_smoothing_enabled = true
 [node name="AlexHouse" parent="." instance=ExtResource("2_egbdm")]
 y_sort_enabled = true
 position = Vector2(16, 16)
+collision_layer = 5
+collision_mask = 5
 
 [node name="NextHouse" parent="." instance=ExtResource("2_egbdm")]
 position = Vector2(222.333, 17.3333)
+collision_layer = 5
+collision_mask = 5
 
 [node name="CatLadyHouse" parent="." instance=ExtResource("2_egbdm")]
 position = Vector2(685, 403)
+collision_layer = 5
+collision_mask = 5
 
 [node name="SoldierHouse" parent="." instance=ExtResource("2_egbdm")]
 position = Vector2(1128, 19)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Bob" type="Area2D" parent="." node_paths=PackedStringArray("dialog")]
 position = Vector2(226, 76)
@@ -3282,6 +3301,8 @@ polygon = PackedVector2Array(-1, 0, 32, -16, 32, -53, -3, -58, -87, -62, -140, -
 
 [node name="Bessie" type="CharacterBody2D" parent="." node_paths=PackedStringArray("dialog")]
 position = Vector2(479, -542)
+collision_layer = 4
+collision_mask = 4
 script = ExtResource("19_w6pnw")
 dialog = NodePath("../Dialog")
 dialog_file = "res://Dialogs/Bessie/Bessie.json"
@@ -3320,6 +3341,7 @@ shape = SubResource("RectangleShape2D_lmpe5")
 
 [node name="BessieHiddenTimer" type="Timer" parent="."]
 wait_time = 240.0
+script = ExtResource("22_tlla6")
 
 [node name="ShadyBackpackDealer" type="Area2D" parent="." node_paths=PackedStringArray("dialog")]
 position = Vector2(620, 56)
@@ -3337,11 +3359,17 @@ hframes = 8
 
 [node name="House" parent="." instance=ExtResource("2_egbdm")]
 position = Vector2(833, -111)
+collision_layer = 5
+collision_mask = 5
 
 [node name="House2" parent="." instance=ExtResource("2_egbdm")]
 position = Vector2(1067, -111)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Fence" type="StaticBody2D" parent="."]
+collision_layer = 5
+collision_mask = 5
 
 [node name="FenceCollison" type="CollisionPolygon2D" parent="Fence"]
 polygon = PackedVector2Array(639, 426, 639, 400, 529, 401, 528, 526, 641, 527, 639, 478, 632, 478, 632, 512, 535, 512, 535, 414, 633, 413, 632, 427)
@@ -3351,66 +3379,108 @@ y_sort_enabled = true
 
 [node name="Tree4" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(856, 183)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree6" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 295)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree19" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1017, 904)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree21" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 983)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree20" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 983)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree18" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 903)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree17" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 807)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree16" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 807)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree15" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 711)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree14" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 711)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree13" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 616)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree12" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 615)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree11" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 519)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree10" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 520)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree9" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 407)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree8" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(936, 408)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree7" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(1016, 296)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree5" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(888, 183)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree3" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(376, 152)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree2" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(200, 295)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Tree" parent="Trees" instance=ExtResource("23_uvneo")]
 position = Vector2(104, 151)
+collision_layer = 5
+collision_mask = 5
 
 [node name="Endings" type="Node2D" parent="." node_paths=PackedStringArray("dialog")]
 script = ExtResource("24_r66sj")
@@ -3431,6 +3501,7 @@ dialog = NodePath("../Dialog")
 [connection signal="bessie_follow" from="Bessie" to="." method="_on_bessie_bessie_follow"]
 [connection signal="bessie_follow" from="Bessie" to="Amelia" method="_on_bessie_bessie_follow"]
 [connection signal="bessie_follow" from="Bessie" to="BessieHiddenTimer" method="_on_bessie_bessie_follow"]
+[connection signal="child_exiting_tree" from="Bessie" to="BessieHiddenTimer" method="_on_bessie_child_exiting_tree"]
 [connection signal="body_entered" from="Bessie/BessieEvent" to="Bessie" method="_on_body_entered"]
 [connection signal="timeout" from="BessieHiddenTimer" to="." method="_on_bessie_hidden_timer_timeout"]
 [connection signal="timeout" from="BessieHiddenTimer" to="Amelia" method="_on_bessie_hidden_timer_timeout"]

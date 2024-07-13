@@ -14,7 +14,7 @@ const STARTING_DIRECTION : Vector2 = Vector2(0,0.5)
 func _ready():
 	animation_tree.set("parameters/idle/blend_position", STARTING_DIRECTION)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if state != PlayerState.READY:
 		return
 	var direction_y = Input.get_axis("ui_up", "ui_down")

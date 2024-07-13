@@ -20,7 +20,7 @@ func _ready():
 	dialog.set_dialog_data("res://Dialogs/Intro/Intro.json")
 	dialog.initialize_dialog()
 
-func _on_dialog_dialog_closed(answers: Array):
+func _on_dialog_dialog_closed(_answers: Array):
 	main_character.state = 0
 
 func _on_dialog_dialog_open():
@@ -48,7 +48,7 @@ func _on_bessie_hidden_timer_timeout():
 func _on_amelia_bessie_returned():
 	bessie_quest = BessieQuest.DONE
 	backpack_quest = BackpackQuest.MAGICAL
-	quest_log.add_companion()
+	quest_log.add_backpack()
 	if weapon_quest != WeaponQuest.NOT_STARTED:
 		get_node("Bob").dialog_file = "res://Dialogs/Bob/BobCompanion.json"
 
@@ -65,6 +65,8 @@ func check_end():
 			ending.two()
 		[WeaponQuest.SWORD, BackpackQuest.ORDINARY, Companion.BESSIE]:
 			ending.three()
+		[WeaponQuest.DAGGER, BackpackQuest.MAGICAL, Companion.BOB]:
+			ending.four()
 
 func _on_bob_bob_joins_party():
 	companion = Companion.BOB

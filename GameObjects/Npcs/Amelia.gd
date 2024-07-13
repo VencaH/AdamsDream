@@ -12,6 +12,8 @@ func _on_body_entered(body):
 		dialog.set_dialog_data(dialog_file)
 		dialog.initialize_dialog()
 		if bessie_returns:
+			bessie_returns = false
+			dialog_file = "res://Dialogs/Amelia/AmeliaBessieHome.json"
 			get_node("../Bessie").queue_free()
 			bessie_returned.emit()
 

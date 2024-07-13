@@ -15,7 +15,7 @@ const JUMP_VELOCITY = -400.0
 
 var cat_state = state.LOST
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = get_direction()
 	if cat_state == state.FOLLOW:
 		velocity = direction * SPEED
